@@ -2,6 +2,8 @@
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 brew install wget
 brew install git
+brew tap phinze/homebrew-cask
+brew install brew-cask
 brew cask install alfred
 brew cask install keka
 brew cask install qq
@@ -26,3 +28,4 @@ brew cask install airmail-beta
 brew cask install tunnelblick
 brew cask install caffeine
 brew cask install keyremap4macbook
+brew cask install vlc
