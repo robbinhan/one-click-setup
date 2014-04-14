@@ -2,6 +2,8 @@
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 brew install wget
 brew install git
+brew install nginx
+brew install mysql
 brew tap phinze/homebrew-cask
 brew install brew-cask
 brew cask install alfred
