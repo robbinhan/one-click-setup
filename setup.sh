@@ -1,9 +1,12 @@
 #!/bin/sh
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
-brew install wget
-brew install git
-brew install nginx
-brew install mysql
+#develop
+brew install zsh wget git nginx mysql rbenv ruby-build
+#oh-my-zsh
+`curl -L http://install.ohmyz.sh | sh`
+echo "/usr/local/bin/zsh" >> /etc/shells
+chsh -s /usr/local/bin/zsh
+#brew cask && app
 brew tap phinze/homebrew-cask
 brew install brew-cask
 brew cask install alfred
