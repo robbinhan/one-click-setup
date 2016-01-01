@@ -22,41 +22,40 @@ brew cask install flux
 brew cask install rtx
 brew cask install sequel-pro
 brew cask install goagentx
-brew cask install airmail-beta
+#brew cask install airmail-beta
 brew cask install tunnelblick
-brew cask install caffeine
+#brew cask install caffeine
 brew cask install keyremap4macbook
-brew cask install vlc
-
+#brew cask install vlc
+brew cask install mpv
 
 #www目录
 www_path="~/www";
 if [ ! -d "$www_path" ]; then
   `mkdir $www_path`
 fi
-#下载phpenv，并初始化submodule
-git clone git@github.com:robbinhan/phpenv.git $www_path/phpenv
-`cd $www_path/phpenv`
-git submodule init
-git submodule update
-`sh $www_path/phpenv/phpenv/bin/phpenv-install.sh`
 
 #将配置写进zshrc
 `echo "if [ -d "${RBENV_ROOT}" ]; then
 	export PATH="${RBENV_ROOT}/bin:${HOME}/.phpenv/bin:${PATH}"
 	eval "$(rbenv init -)"
-	eval "$(phpenv init -)"
 fi" >> ~/.zshrc`
 `source ~/.zshrc`
 
-#安转php5.6.3
-`phpenv install 5.6.3`
-`phpenv versions`
-`phpenv rehash`
-`phpenv global 5.6.3`
+curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
+chmod +x phpbrew
+sudo mv phpbrew /usr/local/bin/phpbrew
+phpbrew init
+`echo '[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc' >> ~/.zshrc`
+phpbrew lookup-prefix homebrew
 
 #安装composer
 `curl -sS https://getcomposer.org/installer | php`
 `mv composer.phar /usr/local/bin/composer`
 
+brew install autojump
+`echo '[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh' >> ~/.zshrc`
+
 echo "need install Yummy FTP"
+echo "need install Amphetamine"
+
