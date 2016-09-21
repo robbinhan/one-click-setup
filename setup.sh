@@ -4,7 +4,7 @@
 brew install zsh wget git youtube-dl the_silver_searcher corkscrew
 #oh-my-zsh
 chsh -s /bin/zsh
-`curl -L http://install.ohmyz.sh | sh`
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo "export LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8" >> ~/.zshrc
 #brew cask && app
 brew tap phinze/homebrew-cask
