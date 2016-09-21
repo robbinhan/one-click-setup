@@ -9,7 +9,6 @@ echo "export LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8" >> ~/.zshrc
 brew tap phinze/homebrew-cask
 brew tap caskroom/cask
 brew tap mpv-player/mpv
-brew install brew-cask
 brew cask install alfred
 #brew cask install qq
 brew cask install google-chrome
