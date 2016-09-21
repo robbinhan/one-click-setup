@@ -11,7 +11,7 @@ brew tap caskroom/cask
 brew tap mpv-player/mpv
 brew install brew-cask
 brew cask install alfred
-brew cask install qq
+#brew cask install qq
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install skim
@@ -24,7 +24,6 @@ brew cask install keyremap4macbook
 brew cask install mpv
 brew cask install atom
 brew cask install sourcetree
-brew cask install amethyst
 
 
 #文件预览插件
@@ -36,12 +35,18 @@ brew cask install qlprettypatch
 brew cask install quicklook-csv
 brew cask install betterzipql
 brew cask install webp-quicklook
-brew cask install suspicious-package
+#brew cask install suspicious-package
 
 
 brew cask install totalfinder
 brew cask install cheatsheet
-brew cask install launchrocket
+#brew cask install launchrocket
+
+brew cask install surge
+brew cask install intellij-idea
+brew cask install postman
+brew cask install snip
+brew cask install docker
 
 #www目录
 www_path="~/www";
@@ -75,7 +80,9 @@ brew install autojump
 
 echo "need install Yummy FTP"
 echo "need install Amphetamine"
-echo "need install Surge"
 echo "need install Office"
+echo "need install kaleidoscope"
+echo "need install smartzipper"
+
 
 
