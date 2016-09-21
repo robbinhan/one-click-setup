@@ -1,5 +1,5 @@
 #!/bin/sh
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 #develop
 brew install zsh wget git openresty mysql youtube-dl the_silver_searcher redis corkscrew
 #oh-my-zsh
