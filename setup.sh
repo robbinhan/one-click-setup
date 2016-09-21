@@ -1,7 +1,7 @@
 #!/bin/sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 #develop
-brew install zsh wget git openresty mysql youtube-dl the_silver_searcher redis corkscrew
+brew install zsh wget git youtube-dl the_silver_searcher corkscrew
 #oh-my-zsh
 `curl -L http://install.ohmyz.sh | sh`
 echo "export LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8" >> ~/.zshrc
