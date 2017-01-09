@@ -15,13 +15,11 @@ brew cask install alfred
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install skim
-brew cask install appzapper
+brew install Caskroom/cask/appcleaner
 brew cask install flux
 brew cask install rtx
 brew cask install sequel-pro
 brew cask install tunnelblick
-brew cask install keyremap4macbook
-brew cask install mpv
 brew cask install atom
 brew cask install sourcetree
 
