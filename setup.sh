@@ -49,7 +49,7 @@ brew cask install snip
 brew cask install docker
 
 #www目录
-www_path="~/www";
+www_path="~/code";
 if [ ! -d "$www_path" ]; then
   `mkdir $www_path`
 fi
@@ -69,8 +69,10 @@ fi
 #phpbrew lookup-prefix homebrew
 
 #安装composer
-`curl -sS https://getcomposer.org/installer | php`
-`mv composer.phar /usr/local/bin/composer`
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '55d6ead61b29c7bdee5cccfb50076874187bd9f21f65d8991d46ec5cc90518f447387fb9f76ebae1fbbacf329e583e30') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 
 brew install autojump
 `echo '[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh' >> ~/.zshrc`
