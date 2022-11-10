@@ -1,7 +1,7 @@
 #!/bin/sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 #develop
-brew install zsh wget git youtube-dl the_silver_searcher corkscrew
+brew install  wget git youtube-dl  
 #oh-my-zsh
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -10,18 +10,15 @@ echo "export LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8" >> ~/.zshrc
 brew tap phinze/homebrew-cask
 brew tap caskroom/cask
 brew tap mpv-player/mpv
-brew cask install alfred
-#brew cask install qq
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install skim
-brew install Caskroom/cask/appcleaner
-brew cask install flux
-brew cask install rtx
-brew cask install sequel-pro
-brew cask install tunnelblick
-brew cask install atom
-brew cask install sourcetree
+brew  install --cask raycast
+brew install --cask google-chrome
+brew install --cask iterm2
+brew install --cask skim
+brew install --cask appcleaner
+brew install --cask flux
+brew install --cask sequel-pro
+brew install --cask visual-studio-code
+brew install --cask sourcetree
 
 
 #文件预览插件
@@ -36,9 +33,8 @@ brew cask install webpquicklook
 #brew cask install suspicious-package
 
 
-brew cask install totalfinder
+
 brew cask install cheatsheet
-#brew cask install launchrocket
 
 brew cask install surge
 brew cask install intellij-idea
